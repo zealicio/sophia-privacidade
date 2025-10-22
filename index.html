@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade · Sophia Sommelier</title>
+  <meta name="description" content="Política de Privacidade da Sophia Sommelier conforme a LGPD (Lei nº 13.709/2018). Transparência sobre coleta, uso, compartilhamento e proteção de dados." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Política de Privacidade · Sophia Sommelier" />
+  <meta property="og:description" content="Como tratamos seus dados no atendimento via bot/assistente virtual, conforme a LGPD." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --surface: #111218;
+      --card: #151823;
+      --muted: #9aa0aa;
+      --text: #eceff4;
+      --brand: #7c3aed;
+      --brand-2: #06b6d4;
+      --focus: 0 0 0 3px rgba(124, 58, 237, .35);
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.45);
+      --maxw: 900px;
+      --divider: rgba(255,255,255,.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f7fb;
+        --surface: #ffffff;
+        --card: #ffffff;
+        --muted: #4b5563;
+        --text: #0f172a;
+        --shadow: 0 10px 25px rgba(2,6,23,.08);
+        --divider: rgba(2,6,23,.12);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(124, 58, 237, .20), transparent 60%),
+        radial-gradient(1000px 500px at -10% 20%, rgba(6, 182, 212, .25), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+      letter-spacing: .1px;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: clamp(24px, 6vh, 80px) auto;
+      padding: 0 20px 48px;
+    }
+
+    .hero {
+      position: relative;
+      background: linear-gradient(120deg, rgba(124, 58, 237, .95), rgba(6, 182, 212, .95));
+      border-radius: calc(var(--radius) + 8px);
+      padding: clamp(24px, 6vw, 56px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero:after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background:
+        radial-gradient(500px 200px at 20% 10%, rgba(255,255,255,.2), transparent 30%),
+        radial-gradient(600px 260px at 80% 60%, rgba(255,255,255,.14), transparent 35%);
+      filter: blur(20px);
+      z-index: -1;
+    }
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+    .brand-dot {
+      width: 12px; height: 12px;
+      border-radius: 999px;
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(255,255,255,.25);
+    }
+    h1 {
+      font-size: clamp(28px, 4.5vw, 44px);
+      margin: 18px 0 6px;
+      line-height: 1.1;
+      letter-spacing: .2px;
+    }
+    .subtitle {
+      margin: 0;
+      opacity: .95;
+      font-size: clamp(14px, 1.7vw, 18px);
+    }
+
+    .card {
+      background: var(--card);
+      margin-top: 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .card .content {
+      padding: clamp(20px, 3.2vw, 32px);
+    }
+
+    /* STACKED layout: remove side-by-side columns in all viewports */
+    .grid {
+      display: block; /* ensures vertical stacking */
+    }
+
+    h2 {
+      font-size: clamp(20px, 2.4vw, 26px);
+      margin: 0 0 12px;
+      letter-spacing: .2px;
+    }
+    section + section {
+      margin-top: 22px;
+      border-top: 1px dashed var(--divider);
+      padding-top: 18px;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: linear-gradient(120deg, rgba(124,58,237,.15), rgba(6,182,212,.15));
+      border: 1px solid rgba(124,58,237,.25);
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+    li { margin: 6px 0; }
+
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(167,139,250,.35);
+      background: linear-gradient(120deg, rgba(124, 58, 237, .10), rgba(6, 182, 212, .10));
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      outline: none;
+    }
+    .cta:focus { box-shadow: var(--focus); }
+    .inline-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .95em;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: rgba(148,163,184,.18);
+      border: 1px solid rgba(148,163,184,.25);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="brand-badge">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Sophia Sommelier
+      </div>
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle">Transparência no uso de dados pessoais, em conformidade com a LGPD (Lei nº 13.709/2018).</p>
+      <a class="cta" href="#direitos">Ver seus direitos</a>
+    </header>
+
+    <main class="card">
+      <div class="content">
+        <section>
+          <span class="pill">Visão Geral</span>
+          <p>
+            Esta Política de Privacidade descreve como a <strong>Sophia Sommelier</strong> coleta, utiliza, compartilha e protege
+            dados pessoais obtidos durante a sua interação com nosso assistente virtual (bots no Telegram/Instagram ou canais equivalentes).
+          </p>
+        </section>
+
+        <div class="grid">
+          <section>
+            <h2>1. Dados coletados</h2>
+            <ul>
+              <li>Identificadores de conta (ID do mensageiro, nome de exibição/usuário).</li>
+              <li>Conteúdo das mensagens e preferências informadas nas conversas.</li>
+              <li>Metadados técnicos básicos (data/hora, status de entrega, idioma).</li>
+              <li>Dados opcionais fornecidos pelo usuário para personalização.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="grid">
+          <section>
+            <h2>2. Finalidades do tratamento</h2>
+            <ul>
+              <li>Operar o assistente virtual e responder às suas solicitações.</li>
+              <li>Personalizar recomendações e melhorar a qualidade do serviço.</li>
+              <li>Prevenir abusos e manter a segurança e integridade da plataforma.</li>
+              <li>Atender obrigações legais e solicitações de autoridades, quando aplicável.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="grid">
+          <section>
+            <h2>3. Bases legais</h2>
+            <ul>
+              <li><strong>Consentimento</strong> do titular ao continuar a interação, quando exigido.</li>
+              <li><strong>Execução de contrato</strong> ou de procedimentos preliminares a pedido do titular (prestação do serviço conversacional).</li>
+              <li><strong>Legítimo interesse</strong> (ex.: melhoria contínua do serviço), observando direitos e liberdades do titular.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="grid">
+          <section>
+            <h2>4. Armazenamento &amp; segurança</h2>
+            <ul>
+              <li>Medidas técnicas e administrativas proporcionais ao risco.</li>
+              <li>Retenção pelo tempo necessário às finalidades desta Política.</li>
+              <li>Controles de acesso e registro de atividades para auditoria.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="grid">
+          <section>
+            <h2>5. Compartilhamento com operadores e parceiros</h2>
+            <p>
+              Não comercializamos dados pessoais identificáveis. O compartilhamento ocorre apenas com
+              <em>operadores de tratamento</em> e parceiros essenciais ao funcionamento técnico e ao atendimento das finalidades
+              informadas, por exemplo, provedores de infraestrutura e processamento de linguagem natural (LLMs).
+              Tais parceiros atuam sob contrato, com instruções da controladora e obrigações de confidencialidade e segurança.
+            </p>
+          </section>
+        </div>
+
+        <div class="grid">
+          <section>
+            <h2>6. Uso econômico, marketing e publicidade</h2>
+            <p>
+              Poderemos utilizar dados para finalidades de <strong>marketing</strong>, <strong>comunicações promocionais</strong> ou
+              parcerias comerciais <strong>somente</strong> quando houver <strong>consentimento válido</strong> do titular ou outra base legal aplicável.
+              Não vendemos dados pessoais individualmente identificáveis.
+            </p>
+            <ul>
+              <li><strong>Publicidade segmentada:</strong> utilizamos preferências e interações para criar públicos-alvo, sem divulgar dados pessoais a terceiros.</li>
+              <li><strong>Dados agregados/anonimizados:</strong> podemos gerar relatórios estatísticos que não identificam indivíduos; tais dados não estão sujeitos à LGPD.</li>
+              <li><strong>Opt-out:</strong> você pode <a href="#direitos">revogar o consentimento</a> a qualquer tempo e optar por não receber comunicações de marketing.</li>
+            </ul>
+          </section>
+        </div>
+
+        <section id="direitos">
+          <h2>7. Direitos do titular</h2>
+          <p>Nos termos dos arts. 18 e seguintes da LGPD, você pode, a qualquer momento:</p>
+          <ul>
+            <li>Solicitar confirmação de tratamento e acesso aos dados.</li>
+            <li>Corrigir dados incompletos, inexatos ou desatualizados.</li>
+            <li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários.</li>
+            <li>Portar seus dados a outro fornecedor (quando aplicável).</li>
+            <li>Revogar o consentimento e obter informações sobre seu uso.</li>
+            <li>Contestar decisões automatizadas, quando houver.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. Transferências internacionais</h2>
+          <p>
+            Alguns provedores técnicos podem estar localizados fora do Brasil. Nesses casos, adotamos salvaguardas contratuais
+            e técnicas adequadas, observando os requisitos da LGPD para transferências internacionais.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Contato do Encarregado (DPO)</h2>
+          <p>
+            Para exercer seus direitos ou tirar dúvidas sobre esta Política, entre em contato com nosso
+            Encarregado de Dados (DPO): <a href="mailto:suporte@sophia-sommelier.com.br">suporte@sophia-sommelier.com.br</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Atualizações desta Política</h2>
+          <p>
+            Podemos atualizar esta Política para refletir melhorias de processos ou mudanças legais. A versão vigente estará sempre
+            disponível nesta página, com a data de atualização indicada abaixo.
+          </p>
+          <p><span class="inline-code">Última atualização: 21/10/2025</span></p>
+        </section>
+
+        <section>
+          <h2>11. Consentimento</h2>
+          <p>
+            Ao continuar a conversa com nossos bots/assistente, você declara estar ciente e de acordo com esta Política de Privacidade.
+          </p>
+        </section>
+
+        <p class="footer">
+          © <span id="yyyy"></span> Sophia Sommelier. Todos os direitos reservados.
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('yyyy').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
